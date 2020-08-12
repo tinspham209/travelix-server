@@ -9,6 +9,11 @@ class HotelsControllers {
 			res.send({ hotel: multipleMongooseToObject(hotel) });
 		});
 	}
+
+	// [GET] /hotels/:slug
+	show(req, res) {
+		res.send("Slug Detail");
+	}
 }
 
 module.exports = new HotelsControllers();
