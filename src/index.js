@@ -3,6 +3,7 @@ const app = express();
 const path = require("path");
 const morgan = require("morgan");
 const handlebars = require("express-handlebars");
+const cors = require("cors");
 const PORT = 5000;
 
 const route = require("./routes");
@@ -33,6 +34,7 @@ app.engine(
 app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "resources/views"));
 
+app.use(cors());
 route(app);
 
 app.listen(PORT, () =>
