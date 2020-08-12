@@ -1,6 +1,6 @@
 const Hotels = require("../models/Hotels");
 
-const { multipleMongooseToObject } = require("../util/mongoose");
+const { multipleMongooseToObject } = require("../../util/mongoose");
 
 class HotelsControllers {
 	// [GET] /
