@@ -5,8 +5,8 @@ const { multipleMongooseToObject } = require("../../util/mongoose");
 class HotelsControllers {
 	// [GET] /
 	index(req, res, next) {
-		Hotels.find({}).then((hotel) => {
-			res.send({ hotel: multipleMongooseToObject(hotel) });
+		Hotels.find({}).then((hotels) => {
+			res.send({ hotels: multipleMongooseToObject(hotels) });
 		});
 	}
 
