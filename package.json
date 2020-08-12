@@ -5,12 +5,14 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "nodemon --inspect src/index.js"
+		"start": "nodemon --inspect src/index.js",
+		"watch": "node-sass --watch src/resources/scss/app.scss src/public/css/app.css "
 	},
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
 		"express": "^4.17.1",
+		"express-handlebars": "^5.1.0",
 		"mongoose": "^5.9.28"
 	},
 	"devDependencies": {
