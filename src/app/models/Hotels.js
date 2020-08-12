@@ -7,7 +7,6 @@ const Hotels = new Schema({
 	price: { type: String, maxLength: 255 },
 	rating: { type: String, maxLength: 255 },
 	imageSource: { type: String, maxLength: 255 },
-	imageSource: { type: String, maxLength: 255 },
 });
 
 module.exports = mongoose.model("hotels", Hotels);
